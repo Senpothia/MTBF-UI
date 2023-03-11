@@ -14,8 +14,8 @@ public class MvcConfiguration implements WebMvcConfigurer{
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 		
 		// Version linux
-		//registry.addResourceHandler("/plots/**")
-		//.addResourceLocations("file:/home/R/plots/");
+		registry.addResourceHandler("/plots/**")
+		.addResourceLocations("file:/home/miguel/R/plots/");
 		
 		
 		// Version windows
