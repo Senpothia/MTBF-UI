@@ -15,5 +15,8 @@ public interface ProxyStatistics {
 	
 	@GetMapping("/coef")
 	void coefficients();
+	
+	@GetMapping("/reg3")
+	void regression3();
 
 }

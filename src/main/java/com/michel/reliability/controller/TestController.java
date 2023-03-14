@@ -34,17 +34,28 @@ public class TestController {
 	public String test3() {
 		
 		microService.activeTest2();
-		return "test2";
+		return "test3";
 	}
 	
+	// Génération d'une régression linéaire via script R (reg4.r) - librairie ggplot2
 	@GetMapping("/reg")
 	public String regression() {
 		
 		microService.regression();
-		return "test3";
+		return "test4";
 		
 	}
 	
+	// Génération d'une régression linéaire via script R (reg2.r) - librairies par défaut
+	@GetMapping("/reg3")
+	public String regression3() {
+		
+		microService.regression3();
+		return "test5";
+		
+	}
+	
+	// Récupération des coefficients d'une régression linéaire
 	@GetMapping("/coef")
 	public String coefficients() {
 		
