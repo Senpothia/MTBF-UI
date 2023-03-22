@@ -18,9 +18,6 @@ public class MvcConfiguration implements WebMvcConfigurer{
 		.addResourceLocations("file:/home/miguel/R/plots/");
 		
 		
-		// Version windows
-		//registry.addResourceHandler("\\plots\\**")
-		//.addResourceLocations("file:\\C:\\tempo\\graphs");
 	}
 	
 
