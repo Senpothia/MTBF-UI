@@ -4,6 +4,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import com.michel.reliability.Constants.Constants;
+
 @Configuration
 public class MvcConfiguration implements WebMvcConfigurer{
 	
@@ -14,8 +16,9 @@ public class MvcConfiguration implements WebMvcConfigurer{
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 		
 		// Version linux
-		registry.addResourceHandler("/plots/**")
-		.addResourceLocations("file:/home/miguel/R/plots/");
+		registry.addResourceHandler(Constants.RESSOURCE_FOLDER)
+		.addResourceLocations(Constants.RESSOURCE_LOCATION);
+		
 		
 		
 	}
